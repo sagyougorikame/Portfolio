@@ -1,0 +1,295 @@
+/* ベーススタイル */
+body {
+  margin: 0;
+  font-family: 'Dela Gothic One', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+  background-color: #444; /* ヘッダーの背景色 */
+  padding: 10px 20px; /* ヘッダーのパディング */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between; /* 左右の要素を分ける */
+  align-items: center; /* 垂直方向の中央揃え */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfoliologo {
+  font-size: 26px; /* ロゴのフォントサイズ */
+  font-weight: bold; /* ロゴを太字に */
+  color: #fff; /* ロゴの色 */
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end; /* メニューを右端に配置 */
+  align-items: center; /* 垂直方向の中央揃え */
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* ソーシャルボタン間のスペースを増やす */
+}
+
+/* YouTubeボタン */
+.youtube-btn {
+  background-color: #FF0000; /* YouTubeのブランドカラー */
+}
+
+/* Twitterボタン */
+.twitter-btn {
+  background-color: #1DA1F2; /* Twitterのブランドカラー */
+}
+
+/* ソーシャルボタンの共通スタイル */
+.social-btn {
+  padding: 10px 15px; /* ボタンのパディング */
+  color: white; /* ボタンの文字色 */
+  border-radius: 5px; /* ボタンの角を丸くする */
+  text-decoration: none; /* 下線を消す */
+  transition: background-color 0.3s; /* ホバー効果を追加 */
+}
+
+.social-btn:hover {
+  background-color: #777; /* ホバー時の背景色 */
+}
+
+/* YouTubeボタンのホバー時 */
+.youtube-btn:hover {
+  background-color: #CC0000; /* YouTubeのホバー時の色 */
+}
+
+/* Twitterボタンのホバー時 */
+.twitter-btn:hover {
+  background-color: #0A95E0; /* Twitterのホバー時の色 */
+}
+
+.menu {
+  position: relative; /* ドロップダウンメニューを正しく配置するために追加 */
+  margin-left: 20px; /* ソーシャルリンクとのスペースを追加 */
+}
+
+.menu span {
+  margin-right: 5px; /* メニューのテキストとアイコンの間にスペースを追加 */
+  font-size: 18px; /* メニューのフォントサイズ */
+  color: white; /* メニューの文字色 */
+}
+
+.dropdown {
+  display: none; /* ドロップダウンメニューを非表示に */
+  position: absolute;
+  right: 0;
+  top: 45px; /* メニューの下に表示 */
+  background-color: #333; /* ドロップダウンの背景色 */
+  border-radius: 5px; /* ドロップダウンの角を丸くする */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ドロップダウンの影 */
+  white-space: nowrap; /* 横書きにするために追加 */
+}
+
+.dropdown li {
+  list-style: none; /* リストのスタイルをなしに */
+}
+
+.dropdown li a {
+  display: block;
+  padding: 10px 15px; /* ドロップダウンのパディング */
+  color: white; /* ドロップダウンの文字色 */
+  text-decoration: none; /* 下線を消す */
+  transition: background-color 0.3s; /* ホバー効果を追加 */
+}
+
+.dropdown li a:hover {
+  background-color: #444; /* ホバー時の背景色 */
+}
+
+/* トップセクション */
+.top-wrapper {
+  background-image: url('earth-1756274_1280.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 180px 0 100px;
+  text-align: center;
+  margin-top: 65px; /* ヘッダーの高さ分だけマージンを追加 */
+}
+
+.top-wrapper h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.top-wrapper p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* 目次セクション */
+.toc-wrapper {
+  padding: 80px 0;  /* 上下のパディングを調整 */
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.toc-wrapper h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.toc {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.toc-link {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0 5px #1a7940;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.toc-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px #1a7940;
+}
+
+/* 自己紹介セクション */
+.about-wrapper {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-wrapper h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  font-size: 18px;
+  color: #666;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* スキルセットセクション */
+.skills-wrapper {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.skills-wrapper h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 22%;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.skill h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 16px;
+  color: #666;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+}
+
+/* 作品セクション */
+.portfolio-wrapper {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.portfolio-wrapper h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 22%;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  color: #666;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+/* フッター */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
